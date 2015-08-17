@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HackerRank
+namespace HackerRank.Algorithms
 {
-    class Program
+    public static class TimeConversion
     {
-        static void Main(string[] args)
+        public static void Run()
         {
             var time = Console.ReadLine();
             var timeValues = time.Split(':');
