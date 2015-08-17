@@ -8,7 +8,7 @@ namespace HackerRank.Algorithms
 {
     public static class SmallSum
     {
-        public static void SmallSum()
+        public static void Run()
         {
             var t = Convert.ToInt32(Console.ReadLine());
             var data = Console.ReadLine();

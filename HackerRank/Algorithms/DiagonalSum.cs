@@ -8,7 +8,7 @@ namespace HackerRank.Algorithms
 {
     public static class DiagonalSum
     {
-        public static void Sum()
+        public static void Run()
         {
             var t = Convert.ToInt32(Console.ReadLine());
 
