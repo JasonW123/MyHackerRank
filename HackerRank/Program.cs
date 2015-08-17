@@ -11,46 +11,19 @@ namespace HackerRank
         static void Main(string[] args)
         {
             var t = Convert.ToInt32(Console.ReadLine());
+            var count = Convert.ToInt32(Console.ReadLine());
             var data = Console.ReadLine();
-            var dataNum = data.Split(' ');
+            var dataNums = data.Split(' ').Select(s => Convert.ToInt32(s)).ToList;
 
-            var array = new List<long>();
-            for (var i = 0; i < t; i++)
+            for (var i = 0; i < count; i++)
             {
-                var num = Convert.ToInt64(dataNum[i]);
-                array.Add(num);
+                var num = dataNums[i];
+                if (num == t)
+                {
+                    Console.WriteLine(i);
+                    break;
+                }
             }
-            Console.WriteLine(array.Sum());
-        }
-
-        private void LargeSum()
-        {
-            var t = Convert.ToInt32(Console.ReadLine());
-            var data = Console.ReadLine();
-            var dataNum = data.Split(' ');
-
-            var array = new List<long>();
-            for (var i = 0; i < t; i++)
-            {
-                var num = Convert.ToInt64(dataNum[i]);
-                array.Add(num);
-            }
-            Console.WriteLine(array.Sum());
-        }
-
-        private void SmallSum()
-        {
-            var t = Convert.ToInt32(Console.ReadLine());
-            var data = Console.ReadLine();
-            var dataNum = data.Split(' ');
-
-            var array = new List<int>();
-            for (var i = 0; i < t; i++)
-            {
-                var num = Convert.ToInt32(dataNum[i]);
-                array.Add(num);
-            }
-            Console.WriteLine(array.Sum());
         }
     }
 }
