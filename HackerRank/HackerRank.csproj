@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\DiagonalSum.cs" />
+    <Compile Include="Algorithms\ExtralongFactorials.cs" />
     <Compile Include="Algorithms\LargeSum.cs" />
+    <Compile Include="Algorithms\LibraryFine.cs" />
     <Compile Include="Algorithms\PlusMinus.cs" />
     <Compile Include="Algorithms\SmallSum.cs" />
     <Compile Include="Algorithms\Sorting\GetIndex.cs" />
@@ -54,7 +57,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Algorithms\Strings\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
