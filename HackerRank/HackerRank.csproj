@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\DiagonalSum.cs" />
+    <Compile Include="Algorithms\DynamicProgramming\FibonacciModified.cs" />
     <Compile Include="Algorithms\ExtralongFactorials.cs" />
     <Compile Include="Algorithms\LargeSum.cs" />
     <Compile Include="Algorithms\LibraryFine.cs" />
